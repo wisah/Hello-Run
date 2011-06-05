@@ -1,0 +1,44 @@
+﻿#page1{
+height:430px;
+}
+
+#homeheader {
+padding: 30px 15px 0;
+text-align: center; 
+}
+
+#homeheader p {
+font-size:13px;
+padding:0px;
+margin:0px;
+}
+
+#logo{
+padding:0px;
+margin:0px;
+}
+
+#bgabout{
+background:#000000;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+}
+
+.ui-listview li img{
+padding:4px;
+}
+
+
+#footerz{
+position:absolute;
+bottom:0;
+width:100%;
+height:40px;   /* Height of the footer */
+background:#c5c5c5;
+}
+
+#logosocial{
+padding-top:5px;
+width:110px;  
+margin: auto;
+}

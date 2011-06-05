@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html> 
+<html> 
+	<head>
+	
+		<title>About Us</title>	
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4/jquery.mobile-1.0a4.min.css" />
+		<style rel="stylesheet">
+		body {  background: #ddd; font-size:10px}
+			.ui-body-c a.ui-link { color: #008595; font-weight: bold; text-decoration: none; }
+			h2 { font-size: 10px; overflow: hidden; white-space: nowrap; display: block; }
+		</style>
+		<script src="http://www.google.com/jsapi?key=ABQIAAAAahcO7noe62FuOIQacCQQ7RTHkUDJMJAZieEeKAqNDtpKxMhoFxQsdtJdv3FJ1dT3WugUNJb7xD-jsQ" type="text/javascript"></script>        
+        <script type="text/javascript">
+			google.load("maps", "3", {'other_params':'sensor=true'});
+			google.load("jquery", "1.5");
+		</script>
+		<script type="text/javascript">
+			// Demonstration purpose only...
+			$(document).bind("mobileinit", function () {
+				$.mobile.ajaxEnabled  = true;
+			});
+		</script>
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.0a4/jquery.mobile-1.0a4.min.js"></script>
+		<script type="text/javascript" src="mobile/ui/jquery.ui.map.js"></script>
+			<style type="text/css">
+    .ui-page {
+        background: transparent url(./images/69513663_l.jpg);
+		background-repeat: no-repeat;
+		  -webkit-background-size: 100% 100%; 
+		  -o-background-size: 100% 100%; 
+		  -moz-background-size: 100% 100%; 
+    }
+</style>
+	</head> 
+
+	<body> 
+
+		<div id="gmap-2" data-role="page" data-theme="a">
+
+			<div data-role="header" data-theme="a">
+				<h1>About</h1>
+			</div>
+
+			<script type="text/javascript">
+				$('#gmap-2').live("pageshow", function() {
+					$('#map_canvas').gmap({'mapTypeId': google.maps.MapTypeId.SATELLITE,'zoom': 15,'center': getLatLng(), 'callback': function() {
+							$('#map_canvas').gmap('addMarker', {'position': getLatLng(), 'animation': google.maps.Animation.DROP, 'title': 'Hello Run'}, function(map, marker) {
+								$('#map_canvas').gmap('addInfoWindow', { 'position':marker.getPosition(), 'content': 'Hello Run' }, function(iw) { 
+									$(marker).click(function() { 
+											iw.open(map, marker); 
+											map.panTo(marker.getPosition()); 
+									}); 
+								}); 
+							});
+						}
+					});
+					function getLatLng() {
+						if ( google.loader.ClientLocation != null ) {
+							return new google.maps.LatLng(google.loader.ClientLocation.latitude, google.loader.ClientLocation.longitude);	
+						}
+						return new google.maps.LatLng(-21.182301,55.287975);
+					}
+				});
+			</script>
+			
+			<div data-role="content"> 
+                
+				<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:0.5em;">
+					<div id="map_canvas" style="height:200px;"></div>
+				</div>
+				<br>
+				<div id="bgabout" style="padding:0.5em;">
+					<p><strong>"</strong>A smooth blend of creativity, technical wizardry and digital know-how - much more than just a web design agency. We offer a large range of web-related services including creative website design, application programming, database development, website and email hosting, domain name registration. Here are our <s>work</s> playground. Have a nice visit<strong>"</strong></p>
+					<p>-------------------------------------------</p>
+					<div id="infoGen">
+						<div id="infosMe">
+							<div class="watdo typeface-js" style="font-family: chunkfive; font-size: 25px">What we like to do :</div>
+							<p align="justify">devellop with <font color=#bed4d4>Flash</font>, design website with <font color=#bed4d4>Photoshop</font>, PSD to XHTML + CSS <font color=#bed4d4>Deamweaver</font>, draw some vector in <font color=#bed4d4>Illustrator</font>, make some layout in <font color=#bed4d4>Indesgn</font>, setting up <font color=#bed4d4>Prestashop</font> e-commerce site, scan the web for <font color=#bed4d4>inspiration</font>, spend some time on <font color=#bed4d4>Facebook</font> and <font color=#bed4d4>Deezer</font></p>
+						</div>
+					</div>
+					<div id="infosMe2">
+							<div class="watdo typeface-js" style="font-family: chunkfive; font-size: 25px">Spare time :</div>
+							<p align="justify">learning <font color=#bed4d4>Jquery</font>, play with <font color=#bed4d4>Sketchup</font> & <font color=#bed4d4>Vray</font> for 3d environment,  test animation on <font color=#bed4d4>after effect</font>, making electronic music with <font color=#bed4d4>Logic Audio</font>, djing with <font color=#bed4d4>Traktor</font>, whatching movies, cooking, surfing, reading, chill with friends, help my wife with his baby wear brand <font color=#bed4d4>Tawee</font></p>
+					</div>
+				</div>
+				<br>
+				</div>
+	</body>
+	
+</html>

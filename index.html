@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html> 
+<html> 
+	<head profile="http://dublincore.org/documents/dcq-html/">
+	
+		<title>jQuery mobile with Google maps - Google maps jQuery plugin</title>		
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4/jquery.mobile-1.0a4.min.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.min.js"></script>
+		<link rel="stylesheet" href="css/mobile.css"/>
+		<style rel="stylesheet">
+			body {  background: #ddd;}
+			body, #gmap-4, .page { height:100%; }
+			#bgabout p{font-size:14px}
+			.ui-body-c a.ui-link { color: #008595; font-weight: bold; text-decoration: none; }
+			.hidden { display:none; }
+			.min-width-480px label.ui-input-text { font-weight:bold; display: block; }
+			.adp-directions { width:100%; }
+			.adp-placemark, .adp-summary, .adp-legal { display:none; margin: 0; }
+			.adp-placemark, .adp-step, .adp-stepicon, .adp-substep{ border-top: none;text-align:center; vertical-align: middle; padding: 0.8em 0; background:#e9eaeb;color:#3e3e3e;text-shadow:0 1px 1px #fff;background-image:-moz-linear-gradient(top,#f0f0f0,#e9eaeb);background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#f0f0f0),color-stop(1,#e9eaeb));-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#f0f0f0', EndColorStr='#e9eaeb')"}
+			.adp-directions tr { border:1px solid #b3b3b3; }
+			h2 { font-size: 16px; overflow: hidden; white-space: nowrap; display: block; }
+			.more { text-align: center; }
+		</style>
+		<script src="http://www.google.com/jsapi?key=ABQIAAAAahcO7noe62FuOIQacCQQ7RTHkUDJMJAZieEeKAqNDtpKxMhoFxQsdtJdv3FJ1dT3WugUNJb7xD-jsQ" type="text/javascript"></script>        
+        <script type="text/javascript">
+			google.load("maps", "3", {'other_params':'sensor=true'});
+			google.load("jquery", "1.5");
+		</script>
+
+			// Demonstration purpose only...
+			$(document).bind("mobileinit", function () {
+				$.mobile.ajaxEnabled  = true;
+			});
+		</script>
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.0a4/jquery.mobile-1.0a4.min.js"></script>
+		<script type="text/javascript" src="ui/jquery.ui.map.js"></script>
+	<style type="text/css">
+    .ui-page {
+        background: transparent url(./images/test.jpg);
+		background-repeat: no-repeat;
+		  -webkit-background-size: 100% 100%; 
+		  -o-background-size: 100% 100%; 
+		  -moz-background-size: 100% 100%; 
+    }
+</style>
+</head>
+<body> 
+	<div data-role="page" data-theme="a" id="page1">
+		<div id="homeheader">
+			<h1 id="logo"><img src="./images/logo2.png" alt="Hello Run" width="187" height="137" /></h1>
+			<p>"Hello-run mobile portfolio"</p>
+		</div> 
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="a">
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="http://localhost/mobile/project.html" data-type="button" data-transition="slideright">Project<span class="ui-li-count">29</span></a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div id="footerz">
+			<div id="logosocial">
+				<img src="./images/skypeb.png" alt="skype me"/>
+				<img src="./images/facebookb.png" alt="facebook"/>
+				<img src="./images/linkedinb.png" alt="linkedIn"/>
+			</div>
+		</div>
+	</div>
+			<script type="text/javascript">
+				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+			try {
+				var pageTracker = _gat._getTracker("UA-17614686-3");
+				pageTracker._trackPageview();
+			} catch(err) {}
+		</script>
+</body>
+</html>

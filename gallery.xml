@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<folio>
+<!-- PORTFOLIO VIRTUEL GRAPHIQUE  -->
+
+<!-- CATÉGORIE Agence 1 -->
+
+<site>
+		<name>Smile Corner</name> 
+		<thumbnail>./img/aqei.jpg</thumbnail>
+		<pic>./img_full/aqei.png</pic>
+		<details>Identity|Print|Web|Jquery</details>
+		<url>http://www.smilecorner.com</url>
+		<description><![CDATA[<font color="#ff0000">aqei</font>]]></description>
+		<categoryID>1</categoryID>
+		<date>2011/04/25</date>
+	</site>
+
+<site>
+		<name>Kaz Nature</name> 
+		<thumbnail>./img/cdclassomption.jpg</thumbnail>
+		<pic>./img_full/cdclassomption.png</pic>
+		<details>Identity|Print|Web|Flash</details>
+		<url>http://www.kaz-nature.re/</url>
+		<description><![CDATA[<font color="#ff0000">cdclassomption</font>]]></description>
+		<categoryID>1</categoryID>
+		<date>2011/04/07</date>
+	</site>
+
+	<site>
+		<name>Tawee</name> 
+		<thumbnail>./img/cfte-lanaudiere.jpg</thumbnail>
+		<pic>./img_full/cfte-lanaudiere.png</pic>
+		<details>Identity|Print|Web|Flash</details>
+		<url>http://www.tawee.re</url>
+		<description><![CDATA[<font color="#ff0000">cfte-lanaudiere</font>]]></description>
+		<categoryID>1</categoryID>
+		<date>2010/12/06</date>
+	</site>
+
+	<site>
+		<name>Orange Player</name> 
+		<thumbnail>./img/maisonadhemardion.jpg</thumbnail>
+		<pic>./img_full/maisonadhemardion.png</pic>
+		<details>Flash|MP3</details>
+		<url>http://www.maisonadhemardion.com/</url>
+		<description><![CDATA[<font color="#ff0000">maisonadhemardion</font>]]></description>
+		<categoryID>1</categoryID>
+		<date>2010/05/26</date>
+	</site>
+
+	<site>
+		<name>Mda Calculator</name> 
+		<thumbnail>./img/clavoiedentaire.jpg</thumbnail>
+		<pic>./img_full/clavoiedentaire.png</pic>
+		<details>Appli|iphone|android</details>
+		<url>http://www.clavoiedentaire.com</url>
+		<description><![CDATA[<font color="#ff0000">productionstapisrouge</font>]]></description>
+		<categoryID>1</categoryID>
+		<date>2010/03/01</date>
+	</site>
+	
+	<site>
+		<name>recrutementintegral</name> 
+		<thumbnail>./img/recrutementintegral.jpg</thumbnail>
+		<pic>./img_full/recrutementintegral.png</pic>
+		<details>Whitening teeth centre</details>
+		<url>http://www.recrutementintegral.com</url>
+		<description><![CDATA[<font color="#ff0000">productionstapisrouge</font>]]></description>
+		<categoryID>1</categoryID>
+		<date>2009/02/20</date>
+	</site>
+	
+	<site>
+		<name>productionstapisrouge</name> 
+		<thumbnail>./img/productionstapisrouge.jpg</thumbnail>
+		<pic>./img_full/productionstapisrouge.png</pic>
+		<details>Whitening teeth centre</details>
+		<url>http://www.productionstapisrouge.com/</url>
+		<description><![CDATA[<font color="#ff0000">productionstapisrouge</font>]]></description>
+		<categoryID>1</categoryID>
+		<date>2009/02/20</date>
+	</site>
+	
+		<site>
+		<name>luciecanuel</name>
+		<thumbnail>./img/luciecanuel.jpg</thumbnail>
+		<pic>./img_full/luciecanuel.png</pic>
+		<details>Whitening teeth centre</details>
+		<url>http://www.luciecanuel.org</url>
+		<description><![CDATA[<font color="#ff0000">luciecanuel</font>]]></description>
+		<categoryID>1</categoryID>
+		<date>2009/06/19</date>
+	</site>
+	
+	
+	<site>
+		<name>Imaj inc</name>
+		<thumbnail>./img/imajinc.jpg</thumbnail>
+		<pic>./img_full/imajinc.png</pic>
+		<details>Whitening teeth centre</details>
+		<url>http://www.imajinc.com/</url>
+		<description><![CDATA[<font color="#ff0000">Imaj inc</font>]]></description>
+		<categoryID>1</categoryID>
+		<date>2007/02/23</date>
+	</site>
+	
+	<site>
+		<name>thema</name>
+		<thumbnail>./img/thema.jpg</thumbnail>
+		<pic>./img_full/thema.png</pic>
+		<details>Whitening teeth centre</details>
+		<url>http://www.thema.ca/</url>
+		<description><![CDATA[<font color="#ff0000">thema</font>]]></description>
+		<categoryID>1</categoryID>
+		<date>2007/11/04</date>
+	</site>
+	
+	<site>
+		<name>ccrepentigny</name>
+		<thumbnail>./img/ccrepentigny.jpg</thumbnail>
+		<pic>./img_full/ccrepentigny.png</pic>
+		<details>Whitening teeth centre</details>
+		<url>http://ccrepentigny.qc.ca/</url>
+		<description><![CDATA[<font color="#ff0000">ccrepentigny</font>]]></description>
+		<categoryID>1</categoryID>
+		<date>2009/03/05</date>
+	</site>
+	
+
+		<site>
+		<name>impressionlacombe</name>
+		<thumbnail>./img/impressionlacombe.jpg</thumbnail>
+		<pic>./img_full/impressionlacombe.png</pic>
+		<details>Whitening teeth centre</details>
+		<url>http://www.impressionlacombe.com/</url>
+		<description><![CDATA[<font color="#ff0000">impressionlacombe</font>]]></description>
+		<categoryID>1</categoryID>
+		<date>2009/01/28</date>
+	</site>
+	
+	<site>
+		<name>rendezvouspourlavie</name>
+		<thumbnail>./img/rendezvouspourlavie.jpg</thumbnail>
+		<pic>./img_full/rendezvouspourlavie.png</pic>
+		<details>Whitening teeth centre</details>
+		<url>http://www.rendezvouspourlavie.com/</url>
+		<description><![CDATA[<font color="#ff0000">rendezvouspourlavie</font>]]></description>
+		<categoryID>1</categoryID>
+		<date>2009/03/03</date>
+	</site>
+	
+	<site>
+		<name>Entreprenez</name>
+		<thumbnail>./img/entreprenez.jpg</thumbnail>
+		<pic>./img_full/entreprenez.png</pic>
+		<details>Whitening teeth centre</details>
+		<url>http://entreprenez.qc.ca/</url>
+		<description><![CDATA[<font color="#ff0000">Entreprenez</font>]]></description>
+		<categoryID>1</categoryID>
+		<date>2008/02/11</date>
+	</site>
+	
+	<site>
+		<name>nonalaviolence</name>
+		<thumbnail>./img/nonalaviolence.jpg</thumbnail>
+		<pic>./img_full/nonalaviolence.png</pic>
+		<details>Whitening teeth centre</details>
+		<url>http://www.ville.repentigny.qc.ca/police/nonalaviolence/</url>
+		<description><![CDATA[<font color="#ff0000">nonalaviolence</font>]]></description>
+		<categoryID>1</categoryID>
+		<date>2006/10/15</date>
+	</site>
+	
+	<site>
+		<name>lauriers dor</name>
+		<thumbnail>./img/lauriersdor.jpg</thumbnail>
+		<pic>./img_full/lauriersdor.png</pic>
+		<details>Whitening teeth centre</details>
+		<url>http://www.lauriersdor.com/</url>
+		<description><![CDATA[<font color="#ff0000">lauriers dor</font>]]></description>
+		<categoryID>1</categoryID>
+		<date>2009/09/17</date>
+	</site>
+
+<!-- CATÉGORIE Alimentation 2  -->
+
+<site>
+		<name>delicesdalbertine</name>
+		<thumbnail>./img/delicesdalbertine.jpg</thumbnail>
+		<pic>./img_full/delicesdalbertine.png</pic>
+		<details>Whitening teeth centre</details>
+		<url>http://www.delicesdalbertine.ca/</url>
+		<description><![CDATA[<font color="#ff0000">delicesdalbertine</font>]]></description>
+		<categoryID>2</categoryID>
+		<date>2011/03/04</date>
+	</site>
+
+<site>
+		<name>Distribution Paral</name>
+		<thumbnail>./img/paral.jpg</thumbnail>
+		<pic>./img_full/paral.png</pic>
+		<details>Whitening teeth centre</details>
+		<url>http://www.paral.ca/</url>
+		<description><![CDATA[<font color="#ff0000">Distribution Paral</font>]]></description>
+		<categoryID>2</categoryID>
+		<date>2010/07/20</date>
+	</site> 
+</folio>

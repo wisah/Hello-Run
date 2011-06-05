@@ -1,0 +1,140 @@
+﻿
+!DOCTYPE html>
+<html>
+	<head>
+	<title>Page Title</title>
+	<link rel="stylesheet"  href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
+			<script type="text/javascript">
+			// Demonstration purpose only...
+			$(document).bind("mobileinit", function () {
+				$.mobile.ajaxEnabled  = true;
+			});
+		</script>
+	<style type="text/css">
+	.ui-content {padding-bottom:0}
+	.ui-body-a .ui-link {
+    color: #2489CE;
+    font-size:12px;
+	text-decoration: none
+	}
+	</style>
+	
+	<script>
+		 var  nombre = 0;
+		 var  nombreMax = 10;
+	 
+	 
+
+$(document).ready(function()
+{
+	
+	   $("#clickme").click(function() {
+            alert("clicked!");
+			nombreMax = 10;
+			alert(nombreMax);
+		
+        });
+
+  $.ajax({
+    type: "GET",
+    url: "gallery.xml",
+    dataType: "xml",
+    success: parseXml
+  });
+});
+	  
+	  function parseXml(xml)
+		{
+		//find every Tutorial and print the author
+		$(xml).find("site").each(function(index)
+		  {
+			  if( nombre < nombreMax ) {
+
+			nombre +=1;
+		//alert(index + ': ' + $(this).text());
+		$("#output").append(
+		"<li class='ui-li-has-thumb ui-btn ui-btn-icon-right ui-li ui-btn-up-c' data-theme='c'><div class='ui-btn-inner ui-li'><div class='ui-btn-text'><a href='#detail_page' id='showdetail' class='ui-link-inherit' ><img class='ui-li-thumb' src='http://www.virtualgx.com/fra/" + $(this).find("thumbnail").text()+"' width='80' height=' 80' border='3' /><h3 class='ui-li-heading'>" + $(this).find("name").text()+"</h3><p class='ui-li-desc'>"+ $(this).find("details").text()+"</p></a></div><span class='ui-icon ui-icon-arrow-r'></span></div></li>");
+
+
+		$("#output").listview('refresh');
+
+		$("#detail").append("<div id='"+ $(this).find("name").text() +"'><img src='http://i.tinysrc.mobi/-20/http://www.virtualgx.com/fra/"+ $(this).find("pic").text() +"'width='100%' ><br><br><a href='"+ $(this).find("url").text() +"' target='_blank' data-role='button'> Visitez </a><span style='font-size:11px;'> * Tous nos sites ne sont pas optimis&eacute;s pour le visionnement mobile.</span></div><br>");
+
+	}
+	
+});
+       $("#showdetail").click(function() {
+
+            //alert($(this).text());
+
+			//$("#maisonadhemardion").css('display', 'block');
+        });
+}
+
+      </script>
+
+
+</head> 
+<body> 
+
+<!-- Start of first page --><!-- /page -->
+
+
+<!-- Start of second page --><!-- /page -->
+
+
+<!-- Start of second page -->
+<div data-role="page" data-theme="a">
+
+<div data-role="header" data-theme="a">
+		<h1>Project</h1>
+				<a href='./index.html' class='ui-btn-left ui-btn-back' data-icon='arrow-l' rel='external' data-direction="reverse">Back</a>	<!-- your button to go back to index.php#user page -->
+
+  </div><!-- /header -->
+	
+	<div data-role="content">
+    
+    <div ></div>
+		
+    <ul data-role="listview" data-filter="true" id="output">
+		<!--	<li>
+
+				<img src="../../../fra/img/cfte-lanaudiere.jpg" width="100" height="85" border="0" />
+				<h3><a href="cfte-lanaudiere.html">Conciliation Famille-Travail-&Eacute;tudes</a></h3>
+				<p>www.cfte-lanaudiere.ca</p>
+</li>!-->
+			
+		</ul>
+   <p><a href="#" id="clickme">more project</a>
+   </div><!-- /content -->
+</div><!-- /page -->
+
+<!-- Start of second page -->
+<div data-role="page" id="detail_page" data-theme="a">
+
+<div data-role="header" data-id="masques">
+		<h1>header</h1>
+	</div><!-- /header -->
+
+	
+	<div data-role="content" style="background-color:#000;">
+	<br>
+	<div style="text-align:center" id="detail"> 
+	
+	</div><!-- /content --><!-- /header -->
+    
+    
+</div><!-- /page -->
+
+<script>
+
+	//$('ul').listview('refresh');
+	//	$("#output").listview() ;
+	
+</script>
+
+</body>
+
+</html>
